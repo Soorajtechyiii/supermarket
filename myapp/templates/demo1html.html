@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> MY HTML</title>
+    </head>
+    <style>
+        h1{
+            background-color: blue;
+        }
+        table{
+            text-align: center;
+            border: 5px;
+            width: 480px;
+            background-color: rgb(109, 116, 116);
+        }
+        body{
+            background-color: rgb(219, 231, 207);
+        }
+       
+       
+    </style>
+    <body>
+        <center><table > 
+            <h1><center>DATA ENTRY</center></h1>
+           <form action="http://127.0.0.1:8000/items/" method="post">
+            <tr><td>ProductID<td><input type="text" name="ID"></td></td>
+            <td><input type="url" name='img' placeholder="Enter a url"></td></tr>
+            <tr><td>ProductName<td><input type="text" name='NAME'></td></td></tr>
+            <tr><td>ProductPrice<td><input type="text" name="PRICE"></td></td></tr>
+            <tr><td>DiscountPrice<td><input type="text" name='DISCOUNT'></td></td></tr>
+            <tr><td colspan="2" align="center"><input type="submit" value="SUBMIT"></td></tr>
+
+           </form>
+    </body>
+</html>
