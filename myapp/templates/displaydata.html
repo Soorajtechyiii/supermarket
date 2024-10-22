@@ -7,8 +7,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
      <style>
         .bg-3{
-            background-color: chocolate;
-            font-size: 30px;
+            background-color: orangered;
+            color: black;
+            font-size: 100px;
             text-align: center;   
         }
        
@@ -29,19 +30,19 @@
         text-align: center;
         background-color: rgb(168, 161, 161);
         color: black;
-        font-size: 20px;
+        font-size: 15px;
         margin-bottom: 50px;
     }
     .card-body{
         background-color: ghostwhite;
     }
    
+   
      </style> <body>
             <div class="container bg-3">
-                <h1>ABC SUPERMARKET</h1>
-                <p>HERE ARE THE DETAILS</p>
+                <p>ABC SUPERMARKET</p>
             </div>
-                <marquee><h1>VEGTABLES</h1></marquee>
+                <marquee><h1>FRUITS AND VEGTABLES</h1></marquee>
             <div class="row">
            
                 {%for x in data %}
@@ -55,6 +56,9 @@
                             productPrice:{{x.productPrice}}
                             DiscountPrice:{{x.DiscountPrice}}
                            </p>
+                           <a href="#" class="btn btn-primary">Buy now</a><br><br>
+                           <a href="#" class="btn btn-primary">Add to cart</a>
+
                     </div>
                </div>
             </div>
