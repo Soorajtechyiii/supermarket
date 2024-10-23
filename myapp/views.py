@@ -31,6 +31,9 @@ def setcookie(request):
 def getcookie(request):
     tutorial=request.COOKIES['java-tutorial']
     return HttpResponse('java tutorials @:'+tutorial);
+def items(request):
+    id=loader.get_template('items.html')
+    return HttpResponse(id.render())
 
         
 
